@@ -2,4 +2,4 @@
 
 下記のサイトをご覧ください。
 
-https://github.com/shimizudan/20240203juliatokyo/
+https://shimizudan.github.io/20240203juliatokyo/
