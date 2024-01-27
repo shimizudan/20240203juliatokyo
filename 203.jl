@@ -54,6 +54,12 @@ md"""
 >- 高校2年　「情報」　週2時間　
 >- 高校3年　「情報」　週1時間　（共通テスト向けの演習）
 
+
+"""
+
+# ╔═╡ 922cae3f-67e5-48d6-88f8-9b5900bd6b5d
+md"""
+
 ### 生徒が利用する端末（BYOD）
 
 >- MacBook
@@ -64,6 +70,10 @@ md"""
 ![](https://shimizudan.github.io/20240203juliatokyo/pic11.png)
 
 
+"""
+
+# ╔═╡ 6205b1fc-ec3a-4b7b-b690-851f151ada1e
+md"""
 
 ### 高校数学について
 
@@ -107,22 +117,41 @@ md"""
 
 - 数学Iの教科書のデータの分析の問題をJuliaを用いて解いたものを`Pluto.jl`でまとめてWebで公開し生徒と共有しました。
 
+
+![](https://shimizudan.github.io/20240203juliatokyo/pic17.png)
+
+
 - [https://shimizudan.github.io/20240106analysis/](https://shimizudan.github.io/20240106analysis/)
+
+"""
+
+# ╔═╡ 1a7b643e-99d2-4720-986b-e8dbb359f36a
+md"""
 
 **＜数学B・統計的な推測＞**
 
 - 数学Bの統計的な推測で行った定期テストの問題をJuliaを用いて解いて，`Pluto.jl`でまとめてWebで公開し生徒と共有しました。
 
+
+![](https://shimizudan.github.io/20240203juliatokyo/pic19.png)
+
+
 - [https://shimizudan.github.io/20231222dist/](https://shimizudan.github.io/20231222dist/)
 
+
+"""
+
+# ╔═╡ 2aeb36da-85f9-4e7c-affd-5d9bc30628d3
+md"""
 
 **＜数学A・整数問題＞**
 
 - 数学Aの整数問題のテーマの冬期講習会の教材です。問題をJuliaを用いて解いて，`Pluto.jl`でまとめてWebで公開し生徒と共有しました。コード作成にChatGPT4を利用しています。
 
 
-- [https://shimizudan.github.io/20240102winter-semi/](https://shimizudan.github.io/20240102winter-semi/)
+![](https://shimizudan.github.io/20240203juliatokyo/pic18.png)
 
+- [https://shimizudan.github.io/20240102winter-semi/](https://shimizudan.github.io/20240102winter-semi/)
 
 """
 
@@ -1594,9 +1623,13 @@ version = "1.4.1+1"
 # ╟─866207ab-db72-4220-b1c7-9b73d0ac91e8
 # ╟─8acc204e-896e-11ed-1251-438ce5d793cb
 # ╟─76a34d8b-81a4-4732-85fa-ff534d22a7da
-# ╟─cb86a55b-a5d6-40c0-9d0a-5a4528f34d67
-# ╠═f200053f-f7ff-45d1-90b8-2bc6689e8340
-# ╟─28052d2d-a97b-4fb2-b5a5-3132e19a19c0
+# ╠═cb86a55b-a5d6-40c0-9d0a-5a4528f34d67
+# ╟─922cae3f-67e5-48d6-88f8-9b5900bd6b5d
+# ╟─6205b1fc-ec3a-4b7b-b690-851f151ada1e
+# ╟─f200053f-f7ff-45d1-90b8-2bc6689e8340
+# ╟─1a7b643e-99d2-4720-986b-e8dbb359f36a
+# ╟─2aeb36da-85f9-4e7c-affd-5d9bc30628d3
+# ╠═28052d2d-a97b-4fb2-b5a5-3132e19a19c0
 # ╠═13dff097-eaed-4207-8aeb-12f667dc8bba
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
