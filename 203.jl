@@ -17,7 +17,7 @@ end
 md"""
 # 高校数学とJuliaについて
 
-![](https://shimizudan.github.io/20240203juliatokyo/pic4.png)
+> ![](https://shimizudan.github.io/20240203juliatokyo/pic4.png)
 
 __2024年2月3日　Julia Tokyo #11　　　　清水　団　[@dannchu](https://twitter.com/dannchu)__
 　
@@ -28,10 +28,10 @@ md"""
 ## 自己紹介
 
 - 清水　団（しみず・だん）
-- 東京都板橋区`城北中学校・高等学校`に数学科の教員として勤務
+- 東京都板橋区 城北中学校・高等学校 に数学科の教員として勤務
 - 2021年度より教頭です。
 
-![](https://shimizudan.github.io/20240203juliatokyo/pic16.png)
+> ![](https://shimizudan.github.io/20240203juliatokyo/pic16.png)
 
 
 　
@@ -67,7 +67,7 @@ md"""
 >- WindowsPC，Chromebookなど
 
 
-![](https://shimizudan.github.io/20240203juliatokyo/pic11.png)
+> ![](https://shimizudan.github.io/20240203juliatokyo/pic11.png)
 
 
 """
@@ -81,9 +81,7 @@ md"""
 
 **＜数学I・データの分析＞**
 
->- データの整理
->- データの代表値
->- データの散らばりと四分位範囲
+>- データの整理，代表値，散らばりと四分位範囲
 >- 分散と標準偏差
 >- 2つの変量の間の関係
 >- 仮説検定の考え方
@@ -92,16 +90,11 @@ md"""
 **＜数学B・統計的な推測＞**
 
 >**＜確率分布＞**
->- 確率変数と確率分布
->- 確率変数の期待値と分散
+>- 確率変数と確率分布，期待値と分散
 >- 確率変数の変換
->- 独立な確率変数と期待値・分散
->- 二項分布
->- 正規分布
+>- 二項分布，正規分布
 >**＜統計的な推測＞**
->- 母集団と標本
->- 推定
->- 仮説検定
+>- 母集団と標本，推定，仮説検定
 
 """
 
@@ -118,7 +111,7 @@ md"""
 - 数学Iの教科書のデータの分析の問題をJuliaを用いて解いたものを`Pluto.jl`でまとめてWebで公開し生徒と共有しました。
 
 
-![](https://shimizudan.github.io/20240203juliatokyo/pic17.png)
+> ![](https://shimizudan.github.io/20240203juliatokyo/pic17.png)
 
 
 - [https://shimizudan.github.io/20240106analysis/](https://shimizudan.github.io/20240106analysis/)
@@ -130,10 +123,10 @@ md"""
 
 **＜数学B・統計的な推測＞**
 
-- 数学Bの統計的な推測で行った定期テストの問題をJuliaを用いて解いて，`Pluto.jl`でまとめてWebで公開し生徒と共有しました。
+- 数学Bの統計的な推測で行った定期テストの問題をJuliaを用いて解いて，`Pluto.jl`でまとめてWebで公開しました。
 
 
-![](https://shimizudan.github.io/20240203juliatokyo/pic19.png)
+> ![](https://shimizudan.github.io/20240203juliatokyo/pic19.png)
 
 
 - [https://shimizudan.github.io/20231222dist/](https://shimizudan.github.io/20231222dist/)
@@ -149,7 +142,7 @@ md"""
 - 数学Aの整数問題のテーマの冬期講習会の教材です。問題をJuliaを用いて解いて，`Pluto.jl`でまとめてWebで公開し生徒と共有しました。コード作成にChatGPT4を利用しています。
 
 
-![](https://shimizudan.github.io/20240203juliatokyo/pic18.png)
+> ![](https://shimizudan.github.io/20240203juliatokyo/pic18.png)
 
 - [https://shimizudan.github.io/20240102winter-semi/](https://shimizudan.github.io/20240102winter-semi/)
 
@@ -162,18 +155,25 @@ md"""
 
 - 数学の授業なので，「よかったらコードを動かしてみて！」くらいです。
 
-- Mac，WindowsPCなどを利用している生徒には`juliaup`でインストールを薦めています。
+**＜juliaupの薦め＞**
+
+- Mac，WindowsPCなどを利用している生徒には`juliaup`でインストールを薦めています。（大野周平さんのZennの記事より）
 
 
-![](https://shimizudan.github.io/20240203juliatokyo/pic20.png)
+> ![](https://shimizudan.github.io/20240203juliatokyo/pic20.png)
 
 
 -  [https://zenn.dev/ohno/articles/6a50819e22f1c4](https://zenn.dev/ohno/articles/6a50819e22f1c4)
 
+
+
+**＜juliahabの薦め＞**
+
+
 - iPadを利用している生徒には`Juliahab`を薦めています。
 
 
-![](https://shimizudan.github.io/20240203juliatokyo/pic21.png)
+> ![](https://shimizudan.github.io/20240203juliatokyo/pic21.png)
 
 
 -  [https://zenn.dev/dannchu/articles/d68e6781c8772f](https://zenn.dev/dannchu/articles/d68e6781c8772f)
@@ -186,22 +186,26 @@ md"""
 
 ### 今後の展開
 
+**＜iPadのローカルでJuliaを動かしたい！＞**
+
 - iPadのサイドローディング。 `Julia`がiPadのローカルでコードを動かすことができるといいですね。
 
 
 
-![](https://shimizudan.github.io/20240203juliatokyo/pic22.png)
+> ![](https://shimizudan.github.io/20240203juliatokyo/pic22.png)
 
 
 -  [https://www.apple.com/newsroom/2024/01/apple-announces-changes-to-ios-safari-and-the-app-store-in-the-european-union/](https://www.apple.com/newsroom/2024/01/apple-announces-changes-to-ios-safari-and-the-app-store-in-the-european-union/)
 
 
 
-- ChatGPT + Julia
+**＜ChatGPTを使ってJuliaのコードを書きたい！＞**
+
+- ChatGPT + Julia　ChatGPTのmyGPTという機能を用いて，`julia-math-code-helper`というカスタマイズしたもGPTを作成しました。
 
 
 
-![](https://shimizudan.github.io/20240203juliatokyo/pic23.png)
+> ![](https://shimizudan.github.io/20240203juliatokyo/pic23.png)
 
 -  [https://chat.openai.com/g/g-pDU1QRKy5-julia-math-code-helper](https://chat.openai.com/g/g-pDU1QRKy5-julia-math-code-helper)
 
@@ -1647,13 +1651,13 @@ version = "1.4.1+1"
 # ╟─866207ab-db72-4220-b1c7-9b73d0ac91e8
 # ╟─8acc204e-896e-11ed-1251-438ce5d793cb
 # ╟─76a34d8b-81a4-4732-85fa-ff534d22a7da
-# ╠═cb86a55b-a5d6-40c0-9d0a-5a4528f34d67
+# ╟─cb86a55b-a5d6-40c0-9d0a-5a4528f34d67
 # ╟─922cae3f-67e5-48d6-88f8-9b5900bd6b5d
 # ╟─6205b1fc-ec3a-4b7b-b690-851f151ada1e
 # ╟─f200053f-f7ff-45d1-90b8-2bc6689e8340
 # ╟─1a7b643e-99d2-4720-986b-e8dbb359f36a
 # ╟─2aeb36da-85f9-4e7c-affd-5d9bc30628d3
 # ╟─28052d2d-a97b-4fb2-b5a5-3132e19a19c0
-# ╠═13dff097-eaed-4207-8aeb-12f667dc8bba
+# ╟─13dff097-eaed-4207-8aeb-12f667dc8bba
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
