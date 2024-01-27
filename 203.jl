@@ -19,7 +19,7 @@ md"""
 
 ![](https://shimizudan.github.io/20240203juliatokyo/pic4.png)
 
-__2024年2月3日　JuliaTokyo　　　　清水　団　[@dannchu](https://twitter.com/dannchu)__
+__2024年2月3日　Julia Tokyo #11　　　　清水　団　[@dannchu](https://twitter.com/dannchu)__
 　
 """
 
@@ -100,228 +100,59 @@ md"""
 md"""
 ## 高校数学とJulia
 
+
 ### 教科書の問題をPluto.jlで作成
 
 
 **＜数学I・データの分析＞**
 
-[https://shimizudan.github.io/20240106analysis/](https://shimizudan.github.io/20240106analysis/)
+- 数学Iの教科書のデータの分析の問題をJuliaを用いて解いたものを`Pluto.jl`でまとめてWebで公開し生徒と共有しました。
+
+- [https://shimizudan.github.io/20240106analysis/](https://shimizudan.github.io/20240106analysis/)
+
+**＜数学B・統計的な推測＞**
+
+- 数学Bの統計的な推測で行った定期テストの問題をJuliaを用いて解いて，`Pluto.jl`でまとめてWebで公開し生徒と共有しました。
+
+- [https://shimizudan.github.io/20231222dist/](https://shimizudan.github.io/20231222dist/)
 
 
-![](https://shimizudan.github.io/20240203juliatokyo/pic12.png)
+**＜数学A・整数問題＞**
+
+- 数学Aの整数問題のテーマの冬期講習会の教材です。問題をJuliaを用いて解いて，`Pluto.jl`でまとめてWebで公開し生徒と共有しました。コード作成にChatGPT4を利用しています。
 
 
-
-
+- [https://shimizudan.github.io/20240102winter-semi/](https://shimizudan.github.io/20240102winter-semi/)
 
 
 """
 
 # ╔═╡ 28052d2d-a97b-4fb2-b5a5-3132e19a19c0
-
-
-# ╔═╡ d13f5be0-6929-4cef-9c18-341dbed714f8
 md"""
 
+### Juliaを生徒が利用するために
 
+- 数学の授業なので，「よかったらコードを動かしてみて！」くらいです。
 
-- 数学B・統計的な推測
-- Webに公開
-- 生徒は
-	- 「ダウンロードして自分のPCで動かしてみる」
-	- binderの利用
-	- Juliahubの利用
+- Mac，WindowsPCなどを利用している生徒には`juliaup`でインストールを薦めています。
 
+-  [https://zenn.dev/ohno/articles/6a50819e22f1c4](https://zenn.dev/ohno/articles/6a50819e22f1c4)
 
+- iPadを利用している生徒には`Juliahab`を薦めています。
 
-	"""
-
-# ╔═╡ d06ebc23-6e59-4b31-abba-dc3ebf6ce296
-md"""
-
-## 標本標準偏差について
-
-まずは教科書（数研出版）を見てみましょう。
-
-
-### 数学B　p.93
-
-
-![](https://shimizudan.github.io/20231029sundaymath/pic7.png)
-
-標本標準偏差は確率変数であると書いてありますが，特に確率分布を求めたり，平均などを求めたりはしません。
-
-### 数学B　p.101
-
-その後，推定に移り次のように書いていあります。
-
-![](https://shimizudan.github.io/20231029sundaymath/pic8.png)
-
-この2つがうまくつながらなかったので，問題を設定して考えてみることにしました。
-
-"""
-
-# ╔═╡ 7710cc68-2923-46c0-9a0a-cce8fdd0265d
-md"""
-
-## 問題
-
-
-> - 1,2,3,4,5の中から3個の数字を取り出す。
-> - 取り出した数字を順に$X_1$，$X_2$，$X_3$とする。（復元抽出）
-> - 　$X_1$，$X_2$，$X_3$は母集団の確率変数$X$と同分布で独立。（i.i.d）
- 
-> 確率分布は
->
-> |$X_i$|1|2|3|4|5|計|
-> |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-> |$P$|1/5|1/5|1/5|1/5|1/5|1|
- 
-
-> - 平均（母平均）は$E(X_i)=E(X)=3$
-> - 分散(母分散）は$Var(X_i)=Var(X)=2$，
-> - 標準偏差(母標準偏差)は$\sqrt{Var(X_i)}=\sqrt{Var(X)}=\sqrt{2}=1.41...$
-
-"""
-
-# ╔═╡ 5212f05b-87e0-48af-a842-0bf0d7de0284
-md"""
-
-### 標本平均の平均
-> - 標本平均は$\displaystyle{\overline X=\dfrac{X_1+X_2+X_3}3}$
-> - 標本平均の平均は$\displaystyle{E(\overline X)=E(X)=3}$
-
-"""
-
-# ╔═╡ de5c989d-49f9-4b63-a7c3-efceb6333903
-begin #標本平均の確率分布
-	
-	X=[if mod(i,5)==0 5 else mod(i,5) end  for i=1:15]
-	Y=union(permutations(X, 3))
-	Z=[sum(Y[i]) for i=1:length(Y)]
-	
-	for i=minimum(Z):maximum(Z)
-	println("$i/3 は$(count(x->(x==i),Z))/125")
-	end
-	println("標本平均の平均は$(map(x->x/3,Z)|>mean)")
-
-	histogram(map(x->x/3,Z),bins=range(0,6, step=1/3),label="")
-	
-end
-
-# ╔═╡ c972c9ab-42eb-4c67-bffa-70c9a2c76d3d
-md"""
-### 標本分散の平均
-> - 標本分散は$\displaystyle{S^2=\dfrac{(X_1-\overline X)^2+(X_2-\overline X)^2+(X_3-\overline X)^2}3}$
-> - 標本分散の平均は$\displaystyle{E(S^2)=\dfrac23\cdot Var(X)=\dfrac43}$
-
-"""
-
-# ╔═╡ b47d892e-e093-4cda-94ed-9db72a0de250
-begin #標本分散の確率分布
-	# X=[if mod(i,5)==0 5 else mod(i,5) end  for i=1:15]
-	# Y=union(permutations(X, 3))
-	A=[sum(Y[i]) for i=1:length(Y)]
-	B=[]
-	for i=1:length(A)
-	    append!(B,sum((Y[i][j]-A[i]/3)^2/3 for j=1:3))
-	    println("$(B[end])の確率は1/125")
-	end
-	println("標本分散の平均は$(B|>mean)")
-	
-	histogram(B,bins=range(0,4, step=1/9),label="")
-	
-end
-
-# ╔═╡ 22db5526-582f-4a4c-a200-c3f7cee44132
-md"""
-### 標本標準偏差の平均
-
-> - 標本標準偏差は$\displaystyle{S=\sqrt{\dfrac{(X_1-\overline X)^2+(X_2-\overline X)^2+(X_3-\overline X)^2}3}}$
-> - 標本標準偏差の平均は$\displaystyle{E(S)\neq\sqrt{E(S^2)}}$に注意。
-
-
-> ![](https://shimizudan.github.io/20231029sundaymath/pic9.png)
+-  [https://zenn.dev/dannchu/articles/d68e6781c8772f](https://zenn.dev/dannchu/articles/d68e6781c8772f)
 
 
 """
 
-# ╔═╡ 37b0f2fc-e98d-4cd0-84d1-90a83fae040e
-begin #標本標準偏差の確率分布
-	# X=[if mod(i,5)==0 5 else mod(i,5) end  for i=1:15]
-	# Y=union(permutations(X, 3))
-	# A=[sum(Y[i]) for i=1:length(Y)]
-	D=[]
-	for i=1:length(A)
-	    append!(D,sum((Y[i][j]-A[i]/3)^2/3 for j=1:3)|>sqrt)
-	
-	    println("$(D[end])の確率は1/125")
-	end
-	println("標本標準偏差の平均は$(D|>mean)")
-	println("標本標準偏差の平均は$(B|>mean|>sqrt)ではない")
-	
-	histogram(D,bins=range(0,2, step=1/9),label="")
-	
-end
-
-# ╔═╡ b779eb6d-af5a-4128-9393-6ed37345ba49
+# ╔═╡ 13dff097-eaed-4207-8aeb-12f667dc8bba
 md"""
 
-## まとめ
+### 今後の展開
 
-- 1,2,3,4,5の中からn個の数字を取り出す。
-- nを1から10まで変化させて，標本標準偏差の平均を調べてみる。
+- iPadでインストールが可能になる。
 
-"""
-
-
-# ╔═╡ 265a0400-06de-4dc6-9521-fbb477213bf0
-begin
-	function  BiasedSampleVar(m,n) #標本分散　1〜mの数字よりn個抽出
-	    A = [i for i=1:m]
-	    X = repeat(A,inner=[n])
-	    Y = collect(multiset_permutations(X, n))
-	    L = length(Y)
-	    X̂ = [sum(Y[i])/n for i=1:L] #それそれの標本平均
-	    Z=[]
-	    for i=1:L
-	         append!(Z,sum((Y[i][j]- X̂[i])^2/n for j=1:n)) # S²
-	    end
-	    return Z 
-	end
-
-	for i=1:10 #標本標準偏差の平均E(S) 1~5の数字よりn個抽出（n=1~10)
-	    println("n=$(i)のときのE(S)=$(map(sqrt,BiasedSampleVar(5,i)) |>mean)")
-	end
-
-end
-
-# ╔═╡ d2aa56bf-746e-42c3-bb57-26325a41f89a
-md"""
-
-- 母標準偏差は$\sqrt2$なので，近づいているようではあるが，まだまだな感じです。
-
-"""
-
-# ╔═╡ 17650b5d-1444-4fc2-b02b-d908ecdcbc3f
-md"""
-
-## 証明
-
-証明は$\mathbb{X}$で教えてもらいました。
-
-
-> - 母標準偏差を$\sigma$とすると，標本分散の平均$E(S^2)$は
->
->$E(S^2)=\dfrac{n-1}{n}\sigma^2\xrightarrow[n\to \infty]{}\sigma^2$
->
-> - また，$\{E(S)\}^2=E(S^2)-Var(S)$である。
->
-> - 一方，大数の法則より，$Var(S)\xrightarrow[n\to \infty]{}0$
->
->$\therefore \{E(S)\}^2 \xrightarrow[n\to \infty]{}\sigma^2$
->
->$\therefore E(S) \xrightarrow[n\to \infty]{}\sigma$
+- `Julia`がiPadのローカルでコードを動かすことができるといいですね。
 
 
 """
@@ -1761,24 +1592,12 @@ version = "1.4.1+1"
 """
 
 # ╔═╡ Cell order:
-# ╠═866207ab-db72-4220-b1c7-9b73d0ac91e8
+# ╟─866207ab-db72-4220-b1c7-9b73d0ac91e8
 # ╟─8acc204e-896e-11ed-1251-438ce5d793cb
-# ╠═76a34d8b-81a4-4732-85fa-ff534d22a7da
+# ╟─76a34d8b-81a4-4732-85fa-ff534d22a7da
 # ╠═cb86a55b-a5d6-40c0-9d0a-5a4528f34d67
 # ╠═f200053f-f7ff-45d1-90b8-2bc6689e8340
 # ╠═28052d2d-a97b-4fb2-b5a5-3132e19a19c0
-# ╠═d13f5be0-6929-4cef-9c18-341dbed714f8
-# ╟─d06ebc23-6e59-4b31-abba-dc3ebf6ce296
-# ╟─7710cc68-2923-46c0-9a0a-cce8fdd0265d
-# ╟─5212f05b-87e0-48af-a842-0bf0d7de0284
-# ╠═de5c989d-49f9-4b63-a7c3-efceb6333903
-# ╟─c972c9ab-42eb-4c67-bffa-70c9a2c76d3d
-# ╠═b47d892e-e093-4cda-94ed-9db72a0de250
-# ╟─22db5526-582f-4a4c-a200-c3f7cee44132
-# ╠═37b0f2fc-e98d-4cd0-84d1-90a83fae040e
-# ╟─b779eb6d-af5a-4128-9393-6ed37345ba49
-# ╠═265a0400-06de-4dc6-9521-fbb477213bf0
-# ╟─d2aa56bf-746e-42c3-bb57-26325a41f89a
-# ╟─17650b5d-1444-4fc2-b02b-d908ecdcbc3f
+# ╠═13dff097-eaed-4207-8aeb-12f667dc8bba
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
