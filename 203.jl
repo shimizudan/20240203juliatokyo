@@ -108,6 +108,21 @@ md"""
 [https://shimizudan.github.io/20240106analysis/](https://shimizudan.github.io/20240106analysis/)
 
 
+![](https://shimizudan.github.io/20240203juliatokyo/pic12.png)
+
+
+
+
+
+
+"""
+
+# ╔═╡ 28052d2d-a97b-4fb2-b5a5-3132e19a19c0
+
+
+# ╔═╡ d13f5be0-6929-4cef-9c18-341dbed714f8
+md"""
+
 
 
 - 数学B・統計的な推測
@@ -119,8 +134,7 @@ md"""
 
 
 
-
-"""
+	"""
 
 # ╔═╡ d06ebc23-6e59-4b31-abba-dc3ebf6ce296
 md"""
@@ -1752,6 +1766,8 @@ version = "1.4.1+1"
 # ╠═76a34d8b-81a4-4732-85fa-ff534d22a7da
 # ╠═cb86a55b-a5d6-40c0-9d0a-5a4528f34d67
 # ╠═f200053f-f7ff-45d1-90b8-2bc6689e8340
+# ╠═28052d2d-a97b-4fb2-b5a5-3132e19a19c0
+# ╠═d13f5be0-6929-4cef-9c18-341dbed714f8
 # ╟─d06ebc23-6e59-4b31-abba-dc3ebf6ce296
 # ╟─7710cc68-2923-46c0-9a0a-cce8fdd0265d
 # ╟─5212f05b-87e0-48af-a842-0bf0d7de0284
