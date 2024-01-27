@@ -164,9 +164,17 @@ md"""
 
 - Mac，WindowsPCなどを利用している生徒には`juliaup`でインストールを薦めています。
 
+
+![](https://shimizudan.github.io/20240203juliatokyo/pic20.png)
+
+
 -  [https://zenn.dev/ohno/articles/6a50819e22f1c4](https://zenn.dev/ohno/articles/6a50819e22f1c4)
 
 - iPadを利用している生徒には`Juliahab`を薦めています。
+
+
+![](https://shimizudan.github.io/20240203juliatokyo/pic21.png)
+
 
 -  [https://zenn.dev/dannchu/articles/d68e6781c8772f](https://zenn.dev/dannchu/articles/d68e6781c8772f)
 
@@ -180,7 +188,23 @@ md"""
 
 - iPadのサイドローディング。 `Julia`がiPadのローカルでコードを動かすことができるといいですね。
 
+
+
+![](https://shimizudan.github.io/20240203juliatokyo/pic22.png)
+
+
+-  [https://www.apple.com/newsroom/2024/01/apple-announces-changes-to-ios-safari-and-the-app-store-in-the-european-union/](https://www.apple.com/newsroom/2024/01/apple-announces-changes-to-ios-safari-and-the-app-store-in-the-european-union/)
+
+
+
 - ChatGPT + Julia
+
+
+
+![](https://shimizudan.github.io/20240203juliatokyo/pic23.png)
+
+-  [https://chat.openai.com/g/g-pDU1QRKy5-julia-math-code-helper](https://chat.openai.com/g/g-pDU1QRKy5-julia-math-code-helper)
+
 
 
 """
@@ -1629,7 +1653,7 @@ version = "1.4.1+1"
 # ╟─f200053f-f7ff-45d1-90b8-2bc6689e8340
 # ╟─1a7b643e-99d2-4720-986b-e8dbb359f36a
 # ╟─2aeb36da-85f9-4e7c-affd-5d9bc30628d3
-# ╠═28052d2d-a97b-4fb2-b5a5-3132e19a19c0
+# ╟─28052d2d-a97b-4fb2-b5a5-3132e19a19c0
 # ╠═13dff097-eaed-4207-8aeb-12f667dc8bba
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
