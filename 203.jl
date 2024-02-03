@@ -20,7 +20,10 @@ md"""
 > ![](https://shimizudan.github.io/20240203juliatokyo/pic4.png)
 
 __2024年2月3日　Julia Tokyo #11　　　　清水　団　[@dannchu](https://twitter.com/dannchu)__
-　
+
+本日の内容は [https://shimizudan.github.io/20240203juliatokyo/](https://shimizudan.github.io/20240203juliatokyo/)
+に公開してあります。
+
 """
 
 # ╔═╡ 76a34d8b-81a4-4732-85fa-ff534d22a7da
@@ -100,13 +103,10 @@ md"""
 
 # ╔═╡ f200053f-f7ff-45d1-90b8-2bc6689e8340
 md"""
-## 高校数学とJulia
+## 高校数学とJulia （Pluto.jlで作成）
 
 
-### 教科書の問題をPluto.jlで作成
-
-
-**＜数学I・データの分析＞**
+### ＜数学I・データの分析＞
 
 - 数学Iの教科書のデータの分析の問題をJuliaを用いて解いたものを`Pluto.jl`でまとめてWebで公開し生徒と共有しました。
 
@@ -121,7 +121,7 @@ md"""
 # ╔═╡ 1a7b643e-99d2-4720-986b-e8dbb359f36a
 md"""
 
-**＜数学B・統計的な推測＞**
+### ＜数学B・統計的な推測＞
 
 - 数学Bの統計的な推測で行った定期テストの問題をJuliaを用いて解いて，`Pluto.jl`でまとめてWebで公開しました。
 
@@ -137,7 +137,7 @@ md"""
 # ╔═╡ 2aeb36da-85f9-4e7c-affd-5d9bc30628d3
 md"""
 
-**＜数学A・整数問題＞**
+### ＜数学A・整数問題＞
 
 - 数学Aの整数問題のテーマの冬期講習会の教材です。問題をJuliaを用いて解いて，`Pluto.jl`でまとめてWebで公開し生徒と共有しました。コード作成にChatGPT4を利用しています。
 
@@ -151,11 +151,11 @@ md"""
 # ╔═╡ 28052d2d-a97b-4fb2-b5a5-3132e19a19c0
 md"""
 
-### Juliaを生徒が利用するために
+## Juliaを生徒が利用するために
 
 - 数学の授業なので，「よかったらコードを動かしてみて！」くらいです。
 
-**＜juliaupの薦め＞**
+### ＜juliaupの薦め＞
 
 - Mac，WindowsPCなどを利用している生徒には`juliaup`でインストールを薦めています。（大野周平さんのZennの記事より）
 
@@ -167,7 +167,7 @@ md"""
 
 
 
-**＜juliahabの薦め＞**
+### ＜juliahabの薦め＞
 
 
 - iPadを利用している生徒には`Juliahab`を薦めています。
@@ -184,9 +184,9 @@ md"""
 # ╔═╡ 13dff097-eaed-4207-8aeb-12f667dc8bba
 md"""
 
-### 今後の展開
+## 今後の展開
 
-**＜iPadのローカルでJuliaを動かしたい！＞**
+### ＜iPad + Julia＞
 
 - iPadのサイドローディング。 `Julia`がiPadのローカルでコードを動かすことができるといいですね。
 
@@ -199,7 +199,7 @@ md"""
 
 
 
-**＜ChatGPTを使ってJuliaのコードを書きたい！＞**
+### ＜ChatGPT + Julia＞
 
 - ChatGPT + Julia　ChatGPTのmyGPTという機能を用いて，`julia-math-code-helper`というカスタマイズしたもGPTを作成しました。
 
@@ -1654,7 +1654,7 @@ version = "1.4.1+1"
 # ╟─cb86a55b-a5d6-40c0-9d0a-5a4528f34d67
 # ╟─922cae3f-67e5-48d6-88f8-9b5900bd6b5d
 # ╟─6205b1fc-ec3a-4b7b-b690-851f151ada1e
-# ╟─f200053f-f7ff-45d1-90b8-2bc6689e8340
+# ╠═f200053f-f7ff-45d1-90b8-2bc6689e8340
 # ╟─1a7b643e-99d2-4720-986b-e8dbb359f36a
 # ╟─2aeb36da-85f9-4e7c-affd-5d9bc30628d3
 # ╟─28052d2d-a97b-4fb2-b5a5-3132e19a19c0
