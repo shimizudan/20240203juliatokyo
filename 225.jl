@@ -1,6 +1,12 @@
 ### A Pluto.jl notebook ###
 # v0.19.36
 
+#> [frontmatter]
+#> title = "math and Julia"
+#> 
+#>     [[frontmatter.author]]
+#>     name = "danshimizu"
+
 using Markdown
 using InteractiveUtils
 
@@ -199,7 +205,7 @@ md"""
 
 
 
-### ＜ChatGPT + Julia＞
+### ＜ChatGPT + Julia1＞
 
 - ChatGPT + Julia　ChatGPTのmyGPTという機能を用いて，`julia-math-code-helper`というカスタマイズしたもGPTを作成しました。
 
